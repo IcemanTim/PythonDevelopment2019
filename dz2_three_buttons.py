@@ -22,15 +22,14 @@ class Interface(tk.Frame):
 
         scale.place(x=380, y=90)
 
-
         def clicked():  
-             lbl.configure(text="Пока")  
+            label_text.configure(text="Пока ! ")  
   
-        lbl = Label(self, text="Привет", font=("Arial Bold", 30))  
-        lbl.grid(column=0, row=0)  
-        
-        third_btn = Button(self, text="Не нажимать!", command=clicked)  
-        third_btn.grid(column=1, row=0) 
+        label_text = tk.Label(text="Привет ! ", font='arial 20')  
+        label_text.place(x=100, y=20, width=220, height=30)  
+
+        third_btn = Button(self, text="Печать в окно", command=clicked)  
+        third_btn.place(x=350, y=20, width=220, height=30)
 
         def show_msg(event):
             print ("Second Button!")
