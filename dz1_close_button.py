@@ -20,11 +20,11 @@ class Interface(tk.Frame):
             exit()
 
         q_btn = Button(self, text=u'Завершить')
-        q_btn.place(x=350, y=170, width=120, height=30)
+        q_btn.place(x=300, y=170, width=120, height=30)
         q_btn.bind("<Button-1>", end_action)
 
     def center_window(self):
-        width = 680
+        width = 780
         height = 400
         screen_w = self.master.winfo_screenwidth()
         screen_h = self.master.winfo_screenheight()
